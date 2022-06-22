@@ -8,5 +8,4 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource(exported = false)
 public interface AuthorRepository extends JpaRepository<Author, Long> {
 
-//	public List<Author> findByLastname(String lastname);
 }
