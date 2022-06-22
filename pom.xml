@@ -61,7 +61,7 @@
 			<version>3.2.4</version>
 			<scope>test</scope>
 		</dependency>
-
+		
 		<!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
 		<dependency>
 			<groupId>net.bytebuddy</groupId>

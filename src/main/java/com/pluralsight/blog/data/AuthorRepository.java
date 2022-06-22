@@ -1,18 +1,14 @@
 package com.pluralsight.blog.data;
 
 import com.pluralsight.blog.model.Author;
-import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 
-@Component
-public class AuthorRepository {
-    public List<Author> findAll() {
-        return new ArrayList<>();
-    }
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Component;
 
-    public List<Author> saveAll(List<Author> authors) {
-        return new ArrayList<>();
-    }
+@Component
+public interface AuthorRepository extends JpaRepository<Author, Long>{
+	
+	public List<Author> findByLastname(String lastname);
 }
